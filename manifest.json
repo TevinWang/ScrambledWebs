@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "ScrambledWebs",
+  "version": "0.1.0",
+  "description": "Scrambling all your eggs with an eggstension, i mean ur web with an extension",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": {
+    "128": "logo-128.png"
+  },
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://*/*"]
+  }]
+ 
+}
